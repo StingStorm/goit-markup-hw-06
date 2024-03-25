@@ -2,7 +2,6 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #434455;
     background-color: #ffffff;
 }
@@ -12,6 +11,8 @@ h2 {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: #2e2f42;
 }
 
@@ -19,11 +20,13 @@ h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
-p {
+.section-text {
     color: #434455;
+    font-size: 16px;
 }
 
 a {
@@ -57,19 +60,23 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #434455;
-}
-
-.logo-span {
     color: #4d5ae5;
 }
 
-.address a {
+.logo-span {
+    color: #2E2F42;
+}
+
+.address  {
+    font-style: normal
+}
+
+.address-link {
     color: #434455;
 }
 
-.address a:hover,
-.address a:focus {
+.address .address-link:hover,
+.address .address-link:focus {
     color: #404BBF;
 }
 
@@ -82,6 +89,7 @@ ul {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
 }
@@ -91,18 +99,13 @@ ul {
         font-weight: 500;
         letter-spacing: 0.04em;
         color: #fff;
-        text-align: center;
-    border-radius: 4px;
-    width: 169px;
-    height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        line-height: 1.5;
     background: #4d5ae5;
-    padding: 16px 32px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background: #404bbf;
+    background-color: #404bbf;
 }
 
 .section-our-team {
@@ -110,20 +113,28 @@ ul {
     background: #f4f4fd;
 }
 
+.team-member {
+    background-color: #FFFFFF;
+}
+
 .footer {
     background: #2e2f42;
 }
 
-.footer p {
+.footer-text  {
         color: #f4f4fd;
 }
 
-.footer-logo {
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+footer .logo-span {
     color: #F4F4FD;
 }
