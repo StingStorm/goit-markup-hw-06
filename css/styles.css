@@ -6,7 +6,16 @@ body {
     background-color: #ffffff;
 }
 
-h2 {
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -16,21 +25,12 @@ h2 {
     color: #2e2f42;
 }
 
-h3 {
+.section-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-ul {
-    list-style-type: none;
 }
 
 .page-nav .nav-link {
