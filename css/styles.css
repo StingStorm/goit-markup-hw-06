@@ -113,11 +113,11 @@ max-width: 1128px;  */
 }
 
 .nav-list {
-    padding: 24px 0;
     display: flex;
 }
 
 .page-nav .nav-link {
+    padding: 24px 0;
     font-weight: 500;
     color: #2e2f42;
     letter-spacing: 0.02em;
@@ -201,6 +201,8 @@ margin-right: 40px;}
     width: 1px;
     height: 1px;
     margin: -1px;
+
+    overflow: hidden;
 }
 
 .section-text {
@@ -211,8 +213,7 @@ margin-right: 40px;}
 
 .section-list {
     display: flex;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 24px;
 }
 
 .section-list li {
@@ -235,6 +236,7 @@ margin-right: 40px;}
 
 .portfolio-list {
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .portfolio-card {
