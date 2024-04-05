@@ -651,8 +651,8 @@ margin-right: 40px;}
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.callback-form .input-label .form-textarea:hover,
-.callback-form .input-label .form-textarea:focus {
+.callback-form .form-textarea:hover,
+.callback-form .form-textarea:focus {
     border-color: #4D5AE5;
 }
 
