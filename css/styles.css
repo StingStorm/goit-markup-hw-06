@@ -386,6 +386,10 @@ margin-right: 40px;}
     margin-right: 120px;
 }
 
+.footer .sub-container:nth-last-child(2) {
+    margin-right: 80px;   
+}
+
 .footer-text  {
     color: #f4f4fd;
     letter-spacing: 0.02em;
@@ -416,4 +420,301 @@ margin-right: 40px;}
 .footer .link:hover,
 .footer .link:focus {
     background-color: #31D0AA;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.subscribe-form .input-label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+
+    position: relative;
+    width: 264px;
+
+}
+
+.subscribe-form .form-input {
+    display: block;
+
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.subscribe-form .form-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.subscribe-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #404bbf;
+}
+
+/* !!!Backdrop & Modal`s!!! */
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.4),
+        rgba(46, 47, 66, 0.4));
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+    max-width: 408px;
+    max-height: 80%;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+
+    box-shadow: 0 1px 1px rgba(46, 47, 66, 0.14),
+            0 1px 3px rgba(46, 47, 66, 0.12),
+            0 2px 1px rgba(46, 47, 66, 0.02);
+}
+
+.modal .close-btn {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.modal .close-btn:hover,
+.modal .close-btn:focus {
+    background-color: #404BBF;
+    border: none;
+}
+.close-btn .icon {
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .icon,
+.close-btn:focus .icon {
+    fill: #fff;
+}
+
+.modal .modal-title {
+    font-family: inherit;
+    color: inherit;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.callback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callback-form .input-label:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+    position: relative;
+    margin-bottom: 8px;
+    width: 360px;
+}
+
+.callback-form .input-label .icon {
+    position: absolute;
+    top: 26px;
+    left: 16px;
+
+    fill: #2E2F42;
+    margin-top: 0;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback-form .form-input:hover + .icon,
+.callback-form .form-input:focus + .icon {
+    fill: #4D5AE5;
+}
+
+.callback-form .form-input {
+    display: block;
+    
+    width: 100%;
+    max-height: 40px;
+    padding: 14px 38px;
+
+    font-size: 14px;
+    color: #2E2F42;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback-form .input-label .form-input:hover,
+.callback-form .input-label .form-input:focus {
+    border: 1px solid #4D5AE5;
+}
+
+.callback-form .input-label .form-textarea {
+    width: 100%;
+    max-height: 120px;
+    padding: 8px 16px;
+
+    font-size: 14px;
+    color: #2E2F42;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: none;
+    overflow-y: auto;
+    resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.callback-form .input-label .form-textarea::placeholder {
+    font-size: 12px;
+    color: rgba(46, 47, 66, 0.4);
+    letter-spacing: 0.04em;
+}
+
+.callback-form .input-label .form-textarea:hover,
+.callback-form .input-label .form-textarea:focus {
+    border: 1px solid #4D5AE5;
+}
+
+.input-wrapper {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.callback-form .policy-accept-label {
+    position: relative;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+}
+
+.custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+
+    position: absolute;
+    top: -1px;
+    left: -22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox > .icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-check:hover + .policy-accept-label .custom-checkbox,
+.policy-check:focus-visible +.policy-accept-label .custom-checkbox {
+    border: 1px solid #4D5AE5;
+}
+
+.policy-check:checked:hover + .policy-accept-label .custom-checkbox,
+.policy-check:checked:focus-visible + .policy-accept-label .custom-checkbox {
+    outline: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.policy-check:checked + .policy-accept-label .custom-checkbox {
+    background-color: #404BBF;
+    border: none;
+}
+
+.policy-check:checked + .policy-accept-label .custom-checkbox > .icon {
+    fill: #F4F4FD;
+}
+
+.privacy-policy-link {
+    color: #4D5AE5;
+    text-decoration: underline;
 }
