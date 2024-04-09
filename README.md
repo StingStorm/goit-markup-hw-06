@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-HMTL+CSS 2.1: Homework-5
+# goit-markup-hw-06
+HMTL+CSS 2.1: Homework-6
